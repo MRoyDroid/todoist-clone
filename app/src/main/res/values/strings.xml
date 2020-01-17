@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">TodoistClone</string>
+
+    <!--    Welcome Screen-->
     <string name="message_welcome">Welcome to Todoist</string>
     <string name="message_brief_welcome">Create an account to save your tasks and access them anywhere. It\'s free. Forever.</string>
+    <string name="btn_next">Next</string>
+
+    <!--    Content Descriptions-->
+    <string name="cd_app_logo">Todoist Logo</string>
 </resources>

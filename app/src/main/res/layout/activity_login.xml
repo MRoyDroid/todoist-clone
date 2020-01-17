@@ -8,11 +8,28 @@
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="56dp" />
+
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="@dimen/app_logo"
+        android:layout_height="@dimen/app_logo"
+        android:contentDescription="@string/cd_app_logo"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end_welcome"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_welcome"
+        app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
     <TextView
         android:id="@+id/message_welcome"
@@ -59,6 +76,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_next"
+        android:textColor="@android:color/white"
+        app:cornerRadius="@dimen/btn_corner_radius"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end_login"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_login"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="@dimen/btn_stroke" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintGuide_end="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
