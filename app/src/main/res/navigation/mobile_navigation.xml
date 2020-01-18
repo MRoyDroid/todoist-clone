@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inbox">
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.mithuroy.todoistclone.ui.inbox.InboxFragment"
+        android:label="@string/menu_inbox"
+        tools:layout="@layout/fragment_inbox" />
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.mithuroy.todoistclone.ui.today.TodayFragment"
+        android:label="@string/menu_today"
+        tools:layout="@layout/fragment_today" />
+
+    <fragment
+        android:id="@+id/nav_next_7_days"
+        android:name="com.mithuroy.todoistclone.ui.next_7_days.Next7DaysFragment"
+        android:label="@string/menu_next_7_days"
+        tools:layout="@layout/fragment_next_7_days" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.mithuroy.todoistclone.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

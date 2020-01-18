@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">TodoistClone</string>
 
+    <!--    Nav Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <!--    Welcome Screen-->
     <string name="message_welcome">Welcome to Todoist</string>
     <string name="message_brief_welcome">Create an account to save your tasks and access them anywhere. It\'s free. Forever.</string>
@@ -8,4 +12,15 @@
 
     <!--    Content Descriptions-->
     <string name="cd_app_logo">Todoist Logo</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--    Menu Action-->
+    <string name="action_activity_log">Activity Log</string>
+    <string name="action_notifications">Notifications</string>
+
+    <!--    Menu-->
+    <string name="menu_inbox">Inbox</string>
+    <string name="menu_today">Today</string>
+    <string name="menu_next_7_days">Next 7 Days</string>
+    <string name="menu_settings">Settings</string>
 </resources>
